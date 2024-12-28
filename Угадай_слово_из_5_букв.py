@@ -10,7 +10,7 @@ list_of_words =[]
 
 def generate_word():                                # функция генерации слова
     global list_of_words
-    with open(r'C:\Users\polle\Documents\Python\Угадай слово из 5 букв\слова.txt','r',encoding='utf-8') as f:
+    with open(r'слова.txt','r',encoding='utf-8') as f:
         list_of_words = f.read().splitlines()
     word = random.choice(list_of_words)
     while word in list_of_used_words:
